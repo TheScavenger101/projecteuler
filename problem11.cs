@@ -73,7 +73,7 @@ namespace Problem11
                     largestNorthwest = sumNorthwest;
                 }
             }
-            Console.WriteLine("The largest product of 4 adjacent numbers from left is: " + largestEast);
+            Console.WriteLine("The largest product of 4 adjacent numbers from left to right is: " + largestEast);
             Console.WriteLine("The largest product of 4 adjacent numbers from top to bottom is: " + largestNorth);
             Console.WriteLine("The largest product of 4 adjacent numbers diagonally left to right is: " + largestNortheast);
             Console.WriteLine("The largest product of 4 adjacent numbers diagonally right to left is: " + largestNorthwest);
