@@ -37,7 +37,7 @@ namespace Rextester
                     result = j;
                 }
             }
-            Console.WriteLine((largest) + " is the largest sequence" + " and " + " and it's found in " + (result));
+            Console.WriteLine((largest) + " is the largest sequence" + " and it's found in " + (result));
         }
     }
 }
