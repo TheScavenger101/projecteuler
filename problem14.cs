@@ -1,43 +1,42 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
 
-namespace Problem14
+namespace Problem_14
 {
-    public class Program
+    class MainClass
     {
         public static void Main(string[] args)
         {
-            int test;
-            int sum;
-            int largest = 0;
-            int result = 0;
-            for (int j = 1000000; j >= 1; j--)
+            const int number = 1000000;
+            long test = 0;
+            long largest = 0;
+            long j;
+            long result = 0;
+            for (j = 2; j <= number; j++)
             {
-                sum = 0;
+                int sum = 1;
                 test = j;
-                for (int i = 1; i > 0; i++)
+                for(int i = 1; i >= 1; i++)
                 {
-                    if (test % 2 == 0)
-                    {
-                      test = test / 2;
+                    if ((test % 2) == 0)
+                   {
+                        test = test / 2;
                     } else {
-                      test = test * 3 + 1;
+                        test = test * 3 + 1;
                     }
-                    sum = i;
+                    sum++;
                     if (test == 1)
                     {
-                      break;
+                        break;
                     }
                 }
                 if (sum > largest)
                 {
-                    largest = sum;
+                    largest = sum;  
                     result = j;
                 }
+                }
+
+            Console.WriteLine(largest + "     " + result);
             }
-            Console.WriteLine((largest) + " is the largest sequence and it's found in " + (result));
         }
     }
-}
